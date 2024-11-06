@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: rgb(74,98,138);
+
+    background-image: url(../res/images/BG-Image.svg);
+    background-size: cover;
+    background-position:top ;
+    background-repeat: no-repeat;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    height: auto;
+    
+    border-radius: 2rem;
+    padding: 1rem;
+
+    background-color: rgba(159, 203, 228,0.5);
+    backdrop-filter: blur(10px);
+}
+
+#username,#email,#password,#submit-form,
+#user-agreement,#submit-form{
+    padding: .5rem;
+}

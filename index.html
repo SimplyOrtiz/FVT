@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Index</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <!--
+        just signed in:
+        Welcome {UserName}, nice to see you here!
+        logged at any moment:
+        Welcome back {UserName}, how are you doing?
+        not logged:
+        Welcome! You aren't logged right now.
+        -->
+        <h1 id="main-text">Welcome {UserName}, nice to see you here!</h1>
+        <div style="padding-top: 5px;padding-bottom: 5px;">
+            <p id="flavor-text">
+                It seems you've just logged in! Welcome to my test site!
+            </p>
+            <div>
+                <div id="not-logged">
+                    <input type="button" value="Log in" style="padding: .5rem;">
+                    <input type="button" value="Sign in" style="padding: .5rem;">    
+                </div>
+                <div id="logged-in">
+                    <input type="button" value="Log out" style="padding: .5rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    Sign In:
+    index.html ?username=name&email=email%40example.com&password=password&UserAgreement=on
+
+    Log In:
+    index.html ?email=email%40example.com&password=password
+    -->
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
